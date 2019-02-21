@@ -6,7 +6,5 @@
 - Lando ile build edilir.
 - ( lando php artisan migrate ) komutu çalıştırılarak tablolar oluşturulur.
 
-ve kullanıma hazır :)
-
 ## Author
 - Tarık FİLİZ
