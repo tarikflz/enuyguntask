@@ -1,0 +1,9 @@
+name: test
+recipe: laravel
+config:
+  via: nginx
+  php: '7.2'
+  database: mysql
+  cache: redis
+  xdebug: true
+  webroot: public
