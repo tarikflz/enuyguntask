@@ -9,14 +9,12 @@
 namespace App\Http\Controllers\Facade;
 
 
-use App\Http\Controllers\Api\MockServiceApi;
 use App\Interfaces\ICurrencyService;
-use App\Models\Currency;
-use Illuminate\Support\Facades\DB;
 
 class CurrencyServiceFacade
 {
-    public function update(ICurrencyService $currencyService){
+    public function update(ICurrencyService $currencyService)
+    {
         $currencyService->save();
     }
 }

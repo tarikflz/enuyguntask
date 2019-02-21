@@ -11,7 +11,8 @@ namespace App\Http\Controllers\Config;
 
 class CurrencyTypes
 {
-    public function all(){
-        return ['USD','EUR','GBP'];
+    public function all()
+    {
+        return ['USD', 'EUR', 'GBP'];
     }
 }

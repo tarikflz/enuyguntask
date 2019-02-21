@@ -20,11 +20,13 @@ class CustomClient
     {
         $this->setClient(new Client());
     }
-    public function consumeApi($method = 'GET',$uri = null,$headers = array()){
+
+    public function consumeApi($method = 'GET', $uri = null, $headers = array())
+    {
         try {
-            $response = $this->getClient()->request($method,$uri);
+            $response = $this->getClient()->request($method, $uri);
             return json_decode($response->getBody()->read(9999));
-        }catch(\Exception $exception){
+        } catch (\Exception $exception) {
             /* @todo logging exception */
         }
     }
